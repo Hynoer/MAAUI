@@ -37,3 +37,23 @@ MonoBehaviour:
     m_SpecifySize: 0
     m_Name: minus
     m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5403699761235895289
+      m_GuidHigh: 17983302571819524502
+    m_SerializedTextureGuid:
+      m_GuidLow: 9711134655197913869
+      m_GuidHigh: 11368334085619567160
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: number
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4725226901732107419
+      m_GuidHigh: 13856540118269955235
+    m_SerializedTextureGuid:
+      m_GuidLow: 9057870602576336275
+      m_GuidHigh: 36033587267557595
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: hearth
+    m_Texture: {fileID: 0}

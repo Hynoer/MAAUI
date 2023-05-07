@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance;
 
+
     #region INIT
     void Awake()
     {
@@ -22,7 +23,7 @@ public class GameManager : MonoBehaviour
     #endregion
     private void OnEnable()
     {
-        // EventManager.instance.OnUserAddIdlas += AddIdlasToYour;
+         //EventManager.instance.OnUserAddIdlas += AddIdlasToYour;
     }
 
     private void OnDisable()
@@ -34,5 +35,9 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+    }
+
+    void AddIdlasToYour() { 
+    
     }
 }

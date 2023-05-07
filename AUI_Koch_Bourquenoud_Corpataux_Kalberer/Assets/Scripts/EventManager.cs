@@ -24,6 +24,16 @@ public class EventManager : MonoBehaviour {
 	#region OnUserClick
 
 
+	public delegate void delegateOnUserClickButton();
+	public delegateOnUserClickButton OnUserClickButton;
+	public void OnClickButton()
+	{
+		if (OnUserClickButton != null)
+		{
+
+			OnUserClickButton();
+		}
+	}
 	#endregion
 
 	#region InternalEvent

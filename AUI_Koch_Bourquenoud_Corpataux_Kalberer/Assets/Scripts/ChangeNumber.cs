@@ -7,6 +7,7 @@ public class ChangeNumber : MonoBehaviour
 {
 
     public int number = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,7 @@ public class ChangeNumber : MonoBehaviour
     }
 
     public void TapNumber() {
-        number = (number + 1) % 9;
+        number = (number + 1) % 10;
         this.GetComponentInChildren<TextMeshPro>().text = number.ToString();
     
     

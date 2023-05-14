@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using static Env;
 
 public class EventManager : MonoBehaviour {
+
+
 
 	public static EventManager instance;
 
@@ -34,17 +37,39 @@ public class EventManager : MonoBehaviour {
 			OnUserClickButton();
 		}
 	}
+
+	public delegate void delegateOnUserClickResult();
+	public delegateOnUserClickResult OnUserClickResult;
+	public void OnClickResult()
+	{
+		if (OnUserClickResult != null)
+		{
+
+			OnUserClickResult();
+		}
+	}
 	#endregion
 
 	#region InternalEvent
 
-	public delegate void delegateOnUserAddIdlas(bool a_idlas);
-	public delegateOnUserAddIdlas OnUserAddIdlas;
-	public void OnAddIdlas(bool a_idlas)
+	public delegate void delegateOnMarkerNumberUpdate(NumberMarker a_marker, int a_newNumber);
+	public delegateOnMarkerNumberUpdate OnMarkerNumberUpdate;
+	public void OnMarkerNumber(NumberMarker a_marker, int a_newNumber)
 	{
-		if (OnUserAddIdlas != null && CanUserAddIdlas(a_idlas)) {
+		if (OnMarkerNumberUpdate != null ) {
 
-			OnUserAddIdlas(a_idlas);
+			OnMarkerNumberUpdate(a_marker, a_newNumber);
+		}
+	}
+
+	public delegate void delegateOnOperatorUpdate(OperatorMarker a_marker);
+	public delegateOnOperatorUpdate OnOperatorUpdate;
+	public void OnMarkerOperator(OperatorMarker a_marker)
+	{
+		if (OnOperatorUpdate != null)
+		{
+
+			OnOperatorUpdate(a_marker);
 		}
 	}
 

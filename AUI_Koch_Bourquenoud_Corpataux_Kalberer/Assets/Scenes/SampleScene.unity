@@ -455,7 +455,6 @@ GameObject:
   - component: {fileID: 1690545632}
   - component: {fileID: 1690545631}
   - component: {fileID: 1690545630}
-  - component: {fileID: 1690545629}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -463,20 +462,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1690545629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1690545628}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6424e03efebb00945adc6ac97e345883, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RaycastManager: {fileID: 1638620051}
-  spawnablePrefab: {fileID: 1234938746340877418, guid: ae6aebdacf005694a902e8f35636813d, type: 3}
 --- !u!114 &1690545630
 MonoBehaviour:
   m_ObjectHideFlags: 0

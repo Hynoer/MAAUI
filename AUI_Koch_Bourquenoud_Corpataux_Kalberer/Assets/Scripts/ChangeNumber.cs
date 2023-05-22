@@ -6,13 +6,16 @@ using static Env;
 
 public class ChangeNumber : MonoBehaviour
 {
+    public GameObject[] List3DPrefabs;
+    public GameObject[] List3DPrefabsDots;
 
     public int number = 0;
     public NumberMarker orderNumber;
 
     public void TapNumber() {
-        number = (number + 1) % 10;
-        this.GetComponentInChildren<TextMeshPro>().text = number.ToString();
+        List3DPrefabs[number].SetActive(false);
+        number = (number + 1) % 19;
+        List3DPrefabs[number].SetActive(true);
         EventManager.instance.OnMarkerNumberUpdate(orderNumber,number);
     
     }

@@ -48,6 +48,17 @@ public class EventManager : MonoBehaviour {
 			OnUserClickResult();
 		}
 	}
+
+	public delegate void delegateOnUserUpdateDots(bool a_isShow);
+	public delegateOnUserUpdateDots OnUpdateDots;
+	public void OnUserClickOnDots(bool a_isShow)
+	{
+		if (OnUpdateDots != null)
+		{
+			OnUpdateDots(a_isShow);
+		}
+	}
+
 	#endregion
 
 	#region InternalEvent

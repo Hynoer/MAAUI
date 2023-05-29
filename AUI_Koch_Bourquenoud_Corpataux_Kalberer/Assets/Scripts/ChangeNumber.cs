@@ -14,57 +14,77 @@ public class ChangeNumber : MonoBehaviour
 
     public bool isDots = true;
 
+    private Color currentColor = Color.blue;
+
     private void OnEnable()
     {
-         EventManager.instance.OnUpdateDots += onDotUpdate;
+        EventManager.instance.OnUpdateDots += onDotUpdate;
+        EventManager.instance.OnMarkerNumberUpdate += onUpdateNumber;
+        EventManager.instance.OnChangeColor += ChangeColor;
+
+        number = GameManager.instance.NumberValue(orderNumber);
+        UpdateVIew();
     }
 
     private void OnDisable()
     {
         EventManager.instance.OnUpdateDots -= onDotUpdate;
+        EventManager.instance.OnMarkerNumberUpdate -= onUpdateNumber;
+        EventManager.instance.OnChangeColor -= ChangeColor;
     }
-
     public void TapNumber() {
 
-        /*foreach (var nb in List3DPrefabs)
+        if (orderNumber == NumberMarker.result)
         {
-            nb.SetActive(false);
+            number = ((number + 1) % 19);
         }
-
-        foreach (var nb in List3DPrefabsDots)
+        else
         {
-            nb.SetActive(false);
+
+            number = ((number + 1) % 10);
         }
 
-        number = (number + 1) % 19;
-        if (isDots)
-        {
-            List3DPrefabsDots[number].SetActive(true);
-        }
-        else {
-            List3DPrefabs[number].SetActive(true);
+        EventManager.instance.OnMarkerNumber(orderNumber, number, false);
+
+    }
+
+    private void onUpdateNumber(NumberMarker a_marker, int a_newNumber, bool a_isForce) {
+        
+        if (a_marker != orderNumber) {
+            return;
         }
 
-        EventManager.instance.OnMarkerNumberUpdate(orderNumber,number);*/
+        number = a_newNumber;
 
+        UpdateVIew();
+    }
+
+    private void UpdateVIew() {
         foreach (var nb in List3DPrefabs)
         {
             nb.SetActive(false);
         }
 
-        number = (number + 1) % 19;
+        List3DPrefabs[number].transform.Find("model/number").GetComponent<MeshRenderer>().material.color = currentColor;
+        if (List3DPrefabs[number].transform.Find("model/number2") != null)
+        {
+            List3DPrefabs[number].transform.Find("model/number2").GetComponent<MeshRenderer>().material.color = currentColor;
+
+        }
         List3DPrefabs[number].SetActive(true);
 
-        EventManager.instance.OnMarkerNumberUpdate(orderNumber,number);
-
-    
     }
-
 
     public void onDotUpdate(bool a_isShow){
         foreach (var nb in List3DPrefabsDots)
         {
             nb.SetActive(a_isShow);
         }
+    }
+
+    private void ChangeColor(Color a_color) {
+
+        currentColor = a_color;
+        UpdateVIew();
     }
 }

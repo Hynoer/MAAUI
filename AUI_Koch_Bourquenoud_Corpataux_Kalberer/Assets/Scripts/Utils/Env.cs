@@ -8,6 +8,7 @@ public static class Env
     public enum OperatorMarker { plus, minus };
 
     public enum MainScreenAction { start, help, exit };
+    public enum ToastAction { ok, next};
 
     public static string DatabaseName = "abcdef.db";
 }

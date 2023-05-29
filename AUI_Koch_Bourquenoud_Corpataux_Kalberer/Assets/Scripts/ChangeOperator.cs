@@ -10,28 +10,37 @@ public class ChangeOperator : MonoBehaviour
     public GameObject plusGO;
     public GameObject minusGO;
 
+    private void OnEnable()
+    {
+        EventManager.instance.OnOperatorUpdate += ShowVisuel;
+    }
 
+    private void OnDisable()
+    {
+        EventManager.instance.OnOperatorUpdate -= ShowVisuel;
+    }
     public void TapOperator() {
         switch (operatorMarker) {
             case OperatorMarker.minus:
                 operatorMarker = OperatorMarker.plus;
-                ShowVisuel(true);
                 break;
+
             case OperatorMarker.plus:
                 operatorMarker = OperatorMarker.minus;
-                ShowVisuel(false);
                 break;
+
             default:
                 break;
         }
 
-        EventManager.instance.OnMarkerOperator(operatorMarker);
+        EventManager.instance.OnMarkerOperator(operatorMarker, false);
     
     }
 
-    private void ShowVisuel(bool a_showPlus) {
-        plusGO.SetActive(a_showPlus);
-        minusGO.SetActive(!a_showPlus);
+
+    private void ShowVisuel(OperatorMarker a_marker, bool a_isAuto) {
+        plusGO.SetActive(a_marker == OperatorMarker.plus);
+        minusGO.SetActive(a_marker == OperatorMarker.minus);
 
     }
 

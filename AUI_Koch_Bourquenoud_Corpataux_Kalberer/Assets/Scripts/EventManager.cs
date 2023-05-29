@@ -59,36 +59,84 @@ public class EventManager : MonoBehaviour {
 		}
 	}
 
+	public delegate void delegateOnUserUpdateState(bool a_isShow);
+	public delegateOnUserUpdateState OnUpdateState;
+	public void OnUserClickOnState(bool a_isShow)
+	{
+		if (OnUpdateState != null)
+		{
+			OnUpdateState(a_isShow);
+		}
+	}
+
 	#endregion
 
 	#region InternalEvent
 
-	public delegate void delegateOnMarkerNumberUpdate(NumberMarker a_marker, int a_newNumber);
+	public delegate void delegateOnMarkerNumberUpdate(NumberMarker a_marker, int a_newNumber, bool a_isForce);
 	public delegateOnMarkerNumberUpdate OnMarkerNumberUpdate;
-	public void OnMarkerNumber(NumberMarker a_marker, int a_newNumber)
+	public void OnMarkerNumber(NumberMarker a_marker, int a_newNumber, bool a_isForce)
 	{
-		if (OnMarkerNumberUpdate != null ) {
 
-			OnMarkerNumberUpdate(a_marker, a_newNumber);
+		EventManager.instance.OnColorChange(Color.blue);
+		if (OnMarkerNumberUpdate != null && (CanUserUpdateMarker(a_marker) || a_isForce)) {
+			
+			OnMarkerNumberUpdate(a_marker, a_newNumber, a_isForce);
 		}
 	}
 
-	public delegate void delegateOnOperatorUpdate(OperatorMarker a_marker);
+	public delegate void delegateOnOperatorUpdate(OperatorMarker a_marker, bool a_isAuto);
 	public delegateOnOperatorUpdate OnOperatorUpdate;
-	public void OnMarkerOperator(OperatorMarker a_marker)
+	public void OnMarkerOperator(OperatorMarker a_marker, bool a_isAuto)
 	{
-		if (OnOperatorUpdate != null)
+
+		EventManager.instance.OnColorChange(Color.blue);
+		GameManager.instance.OperatorMarkerUpdate(a_marker, a_isAuto);
+		if (OnOperatorUpdate != null && CanUserUpdatOperator())
 		{
 
-			OnOperatorUpdate(a_marker);
+			OnOperatorUpdate(a_marker, a_isAuto);
+		}
+	}
+
+	public delegate void delegateOnChangeColor(Color a_color);
+	public delegateOnChangeColor OnChangeColor;
+	public void OnColorChange(Color a_color)
+	{
+		if (OnChangeColor != null)
+		{
+
+			OnChangeColor(a_color);
 		}
 	}
 
 
 	#endregion
 	#region UserCan
-	bool CanUserAddIdlas(bool a_idlas) {
+	bool CanUserUpdateMarker(NumberMarker a_marker) {
+		if (GameManager.instance.currentGameState == GameManager.GameState.game) {
+			switch (a_marker) {
+				case NumberMarker.first:
+					return false;
+
+				case NumberMarker.second:
+					return false;
+
+				case NumberMarker.result:
+					return true;
+
+				default:
+					return true;
+			}
+		
+		}
+
 		return true;
+	}
+
+	bool CanUserUpdatOperator()
+	{
+		return GameManager.instance.currentGameState != GameManager.GameState.game;
 	}
 
 

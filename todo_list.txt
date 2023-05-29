@@ -1,0 +1,30 @@
+
+UI lancement 
+    -start
+    -aide
+    -exit
+    
+Interface In Game
+    -dot on/off
+    -button/interaction next when calcule and result is ok
+    -green when ok then generate next nok answer in red
+    -toggle mode exploration (solve calcul auto), mode challenge solve for x,( a + b = x)
+    -secouer -> effacé
+    
+Tutoriel IG
+    -panel d'aide +/- operation (on click show explication)
+
+Update les tags 
+    -definir les markers (cf XR foundation)
+    
+Storytelling
+    -what happen when result ok -> = 
+    -creation calcul random -> store the calcul created
+    -egale/result number start at ? (?,0,1,2,3,4,5,....)
+    -switching to mode exploration solve the calcule instantly
+    -switching to mode challenge randomize the numbers
+    -show counter streak in challenger mode -> result ok +1, no ok = 0
+    -panel de score maybe best score
+    
+Updater les prefabs numbers
+    

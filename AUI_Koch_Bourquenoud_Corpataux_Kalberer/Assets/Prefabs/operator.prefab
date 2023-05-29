@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6580577900769582822}
   - component: {fileID: 7604977541709853679}
+  - component: {fileID: -1609183810663407664}
   m_Layer: 0
   m_Name: operator
   m_TagString: Untagged
@@ -49,6 +50,54 @@ MonoBehaviour:
   operatorMarker: 0
   plusGO: {fileID: 3432376601709480573}
   minusGO: {fileID: 5036200673194824833}
+--- !u!114 &-1609183810663407664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654169804086450615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a878a6ff128243dfb1d89ca0273f059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnStateChange:
+    m_PersistentCalls:
+      m_Calls: []
+  basicEditor: 0
+  generalProps: 0
+  limitsProps: 0
+  advancedProps: 0
+  minPointers: 0
+  maxPointers: 0
+  useSendMessage: 0
+  sendStateChangeMessages: 0
+  sendMessageTarget: {fileID: 0}
+  useUnityEvents: 1
+  sendStateChangeEvents: 0
+  requireGestureToFail: {fileID: 0}
+  friendlyGestures: []
+  OnTap:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7604977541709853679}
+        m_TargetAssemblyTypeName: ChangeOperator, Assembly-CSharp
+        m_MethodName: TapOperator
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  numberOfTapsRequired: 1
+  timeLimit: Infinity
+  distanceLimit: Infinity
+  combinePointers: 0
+  combinePointersInterval: 0.3
 --- !u!1001 &3939750678179937452
 PrefabInstance:
   m_ObjectHideFlags: 0

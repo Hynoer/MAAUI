@@ -6,7 +6,7 @@ using static Env;
 public class Result: MonoBehaviour
 {
 
-    public void TapNumber()
+    public void TapResult()
     {
         EventManager.instance.OnClickResult();
 

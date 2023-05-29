@@ -5,11 +5,24 @@ using static Env;
 
 public class ToastButton : MonoBehaviour
 {
+
+    public ToastAction crtAction;
     public void TapToastButton()
     {
-        //EventManager.instance.OnOperatorUpdate(currentAction);
-        this.GetComponent<Animator>().SetTrigger("Pressed");
+        switch (crtAction) {
+            case ToastAction.ok:
+
+                this.transform.parent.gameObject.SetActive(false);
+                break;
+            case ToastAction.next:
+
+                this.transform.parent.gameObject.SetActive(false);
+                GameManager.instance.GenerateCalcule();
+                break;
+            default:
+
+                break;
+        }
         this.transform.parent.gameObject.SetActive(false);
-        Debug.Log("clicked");
     }
 }

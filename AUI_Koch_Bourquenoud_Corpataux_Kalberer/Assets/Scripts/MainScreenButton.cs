@@ -10,8 +10,8 @@ public class MainScreenButton : MonoBehaviour
 
     public void TapMainScreenButton()
     {
-        //EventManager.instance.OnOperatorUpdate(currentAction);
         this.GetComponent<Animator>().SetTrigger("Pressed");
-        Debug.Log(currentAction);
+        GameObject.Find("UI/Main").SetActive(false);
+        GameManager.instance.GenerateCalcule();
     }
 }

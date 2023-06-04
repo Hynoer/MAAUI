@@ -110,6 +110,17 @@ public class EventManager : MonoBehaviour {
 		}
 	}
 
+	public delegate void delegateOnUserWantReset();
+	public delegateOnUserWantReset OnUserWantReset;
+	public void OnUserReset()
+	{
+		if (OnUserWantReset != null)
+		{
+
+			OnUserWantReset();
+		}
+	}
+
 
 	#endregion
 	#region UserCan

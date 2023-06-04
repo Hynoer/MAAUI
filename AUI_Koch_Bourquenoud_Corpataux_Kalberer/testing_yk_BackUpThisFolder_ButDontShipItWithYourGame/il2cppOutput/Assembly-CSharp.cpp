@@ -913,6 +913,8 @@ struct Untouchable_t421EB204C9258DC265AB1EA7D8DDB78F4C930613;
 struct Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7;
 // UnityEngine.UI.VertexHelper
 struct VertexHelper_tB905FCB02AE67CBEE5F265FE37A5938FC5D136FE;
+// Vibrator
+struct Vibrator_tCFC9A650E7E24F29269662BFF81F9DE92E369447;
 // System.Void
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
 // UnityEngine.WaitForEndOfFrame
@@ -4985,6 +4987,11 @@ struct TouchLayer_t1BF7B9CFDF3349B3FB08C0AEE203CA748B9383FC  : public MonoBehavi
 
 // UnityEngine.EventSystems.UIBehaviour
 struct UIBehaviour_tB9D4295827BD2EEDEF0749200C6CA7090C742A9D  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+};
+
+// Vibrator
+struct Vibrator_tCFC9A650E7E24F29269662BFF81F9DE92E369447  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 };
 
@@ -11956,6 +11963,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Env__cctor_m107E83A7C5F54ACC5AA0A24E714D
 		// public static string DatabaseName = "abcdef.db";
 		((Env_tC5EBF58E49EE2D52C8759C3E89487ABF9AD50C1B_StaticFields*)il2cpp_codegen_static_fields_for(Env_tC5EBF58E49EE2D52C8759C3E89487ABF9AD50C1B_il2cpp_TypeInfo_var))->___DatabaseName_0 = _stringLiteralBE4D6CCC37A9263C686347DAF33D929BE30A66A8;
 		Il2CppCodeGenWriteBarrier((void**)(&((Env_tC5EBF58E49EE2D52C8759C3E89487ABF9AD50C1B_StaticFields*)il2cpp_codegen_static_fields_for(Env_tC5EBF58E49EE2D52C8759C3E89487ABF9AD50C1B_il2cpp_TypeInfo_var))->___DatabaseName_0), (void*)_stringLiteralBE4D6CCC37A9263C686347DAF33D929BE30A66A8);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Vibrator::Vibration()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Vibrator_Vibration_mE81BCF771C55772D6583BD5529BC5AA31685E04D (Vibrator_tCFC9A650E7E24F29269662BFF81F9DE92E369447* __this, const RuntimeMethod* method) 
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void Vibrator::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Vibrator__ctor_m23D9BCCC8EAC77B6DD2A908A84E8644B0BAA2031 (Vibrator_tCFC9A650E7E24F29269662BFF81F9DE92E369447* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
 }

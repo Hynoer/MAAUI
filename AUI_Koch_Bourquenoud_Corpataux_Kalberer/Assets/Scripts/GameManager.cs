@@ -47,6 +47,7 @@ public class GameManager : MonoBehaviour
          EventManager.instance.OnMarkerNumberUpdate += NumberMarkerUpdate;
          EventManager.instance.OnUserClickResult += checkResult;
          EventManager.instance.OnUpdateState += UpdateState;
+         //EventManager.instance.OnUserWantReset += UpdateState;
     }
 
     private void OnDisable()
@@ -190,6 +191,11 @@ public class GameManager : MonoBehaviour
         firstBase = firstNumber;
         secondBase = secondNumber;
 
+    }
+
+    private void Reset()
+    {
+        
     }
 
     public int NumberValue(NumberMarker a_marker)

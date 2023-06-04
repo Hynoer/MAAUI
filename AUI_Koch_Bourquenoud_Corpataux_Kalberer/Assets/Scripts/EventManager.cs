@@ -92,7 +92,7 @@ public class EventManager : MonoBehaviour {
 
 		EventManager.instance.OnColorChange(Color.blue);
 		GameManager.instance.OperatorMarkerUpdate(a_marker, a_isAuto);
-		if (OnOperatorUpdate != null && CanUserUpdatOperator())
+		if (OnOperatorUpdate != null && (CanUserUpdatOperator() || a_isAuto))
 		{
 
 			OnOperatorUpdate(a_marker, a_isAuto);
@@ -121,6 +121,17 @@ public class EventManager : MonoBehaviour {
 		}
 	}
 
+	public delegate void delegateOnUserGetWrong();
+	public delegateOnUserGetWrong OnUserGetWrong;
+	public void OnGetWrong()
+	{
+		if (OnUserGetWrong != null)
+		{
+
+			OnUserGetWrong();
+		}
+	}
+
 
 	#endregion
 	#region UserCan
@@ -137,7 +148,7 @@ public class EventManager : MonoBehaviour {
 					return true;
 
 				default:
-					return true;
+					return false;
 			}
 		
 		}

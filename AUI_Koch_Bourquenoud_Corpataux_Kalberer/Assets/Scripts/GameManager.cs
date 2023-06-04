@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
          EventManager.instance.OnMarkerNumberUpdate += NumberMarkerUpdate;
          EventManager.instance.OnUserClickResult += checkResult;
          EventManager.instance.OnUpdateState += UpdateState;
-         //EventManager.instance.OnUserWantReset += UpdateState;
+         EventManager.instance.OnUserWantReset += UserReset;
     }
 
     private void OnDisable()
@@ -55,6 +55,7 @@ public class GameManager : MonoBehaviour
         EventManager.instance.OnMarkerNumberUpdate -= NumberMarkerUpdate;
         EventManager.instance.OnUserClickResult -= checkResult;
         EventManager.instance.OnUpdateState -= UpdateState;
+        EventManager.instance.OnUserWantReset -= UserReset;
     }
 
     // Start is called before the first frame update
@@ -99,6 +100,9 @@ public class GameManager : MonoBehaviour
             //Red color
             streak = 0;
             EventManager.instance.OnColorChange(Color.red);
+            EventManager.instance.OnGetWrong();
+
+    
         }
 
     }
@@ -193,9 +197,10 @@ public class GameManager : MonoBehaviour
 
     }
 
-    private void Reset()
+    private void UserReset()
     {
-        
+
+        EventManager.instance.OnMarkerNumber(NumberMarker.result, 0, true);
     }
 
     public int NumberValue(NumberMarker a_marker)

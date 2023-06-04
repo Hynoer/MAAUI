@@ -1,14 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class Vibrator : MonoBehaviour
+namespace RDG
 {
+    public class Vibrator : MonoBehaviour
+    {
+        private void OnEnable()
+        {
+            EventManager.instance.OnUserGetWrong += MakeVibration;
+        }
 
+        private void OnDisable()
+        {
+            EventManager.instance.OnUserGetWrong -= MakeVibration;
+        }
 
-    public void Vibration() {
+        public void MakeVibration()
+        {
 
-       // Vibration.VibratePredefined(1);
+            Vibration.VibratePredefined(1);
 
+        }
     }
 }

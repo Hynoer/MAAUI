@@ -37,14 +37,16 @@ public class ChangeNumber : MonoBehaviour
         if (orderNumber == NumberMarker.result)
         {
             number = ((number + 1) % 19);
+            EventManager.instance.OnMarkerNumber(orderNumber, number, false);
         }
         else
         {
-
-            number = ((number + 1) % 10);
+            if (GameManager.instance.currentGameState != GameManager.GameState.game) {
+                number = ((number + 1) % 10);
+                EventManager.instance.OnMarkerNumber(orderNumber, number, false);
+            }
         }
 
-        EventManager.instance.OnMarkerNumber(orderNumber, number, false);
 
     }
 

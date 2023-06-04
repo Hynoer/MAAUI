@@ -178,6 +178,8 @@ struct Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C;
 struct AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03;
 // UnityEngine.AndroidJavaObject
 struct AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0;
+// System.AsyncCallback
+struct AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C;
 // TouchScript.Examples.RawInput.Ball
 struct Ball_t891D07D35BF819E0570CB69DA675794057F35304;
 // UnityEngine.EventSystems.BaseRaycaster
@@ -216,10 +218,14 @@ struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B;
 struct CustomPointerProxy_tD0D2F4BF50F3F28B58F6AB5964F1278E0D0670E4;
 // UnityEngine.Profiling.CustomSampler
 struct CustomSampler_tDA472186F08B4016626F032F944036BADFDB5487;
+// System.Delegate
+struct Delegate_t;
 // System.DelegateData
 struct DelegateData_t9B286B493293CD2D23A5B2B5EF0E5B1324C2B77E;
 // System.EventArgs
 struct EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377;
+// EventManager
+struct EventManager_t2FAA3AA5EE7E33EE027BB7CA68ABCF128E3C579A;
 // System.Exception
 struct Exception_t;
 // TouchScript.Examples.Checkers.Exclusive
@@ -242,6 +248,8 @@ struct Gradient_tA7FEBE2FDB4929FFF6C997134841046F713DAC1E;
 struct GradientTexture_t3017B2A152CE7A975273690BBF6DC330CB703B01;
 // UnityEngine.UI.Graphic
 struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931;
+// System.IAsyncResult
+struct IAsyncResult_t7B9B5A0ECB35DCEC31B8A8122C37D687369253B5;
 // TouchScript.InputSources.ICoordinatesRemapper
 struct ICoordinatesRemapper_tF7AD3C4B90342DB4BD36A3499A75A4A6AE421370;
 // System.Collections.IDictionary
@@ -382,6 +390,8 @@ struct Transformer_tC6A9F2D88F05C80A88CEEC2C3A82E3B4AE1D39DC;
 struct UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7;
 // UnityEngine.UI.VertexHelper
 struct VertexHelper_tB905FCB02AE67CBEE5F265FE37A5938FC5D136FE;
+// RDG.Vibrator
+struct Vibrator_t11891E8D0D00F494824FC1C60BE7EAB13D7EEFF6;
 // System.Void
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
 // TouchScript.Examples.Portal.Vortex
@@ -392,6 +402,24 @@ struct WaitForEndOfFrame_tE38D80923E3F8380069B423968C25ABE50A46663;
 struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3;
 // UnityEngine.Camera/CameraCallback
 struct CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD;
+// EventManager/delegateOnChangeColor
+struct delegateOnChangeColor_tDC0949F187BB2A15EDAC20270E21A3DE531EB521;
+// EventManager/delegateOnMarkerNumberUpdate
+struct delegateOnMarkerNumberUpdate_t998E392401E85C9B9A398D2488AF0C17D8B5FCF4;
+// EventManager/delegateOnOperatorUpdate
+struct delegateOnOperatorUpdate_t3876CAB8F12966A9F0E507B08F2B962040967346;
+// EventManager/delegateOnUserClickButton
+struct delegateOnUserClickButton_t75E77BCF0B8B5B731D3B37D933327C1548F2152B;
+// EventManager/delegateOnUserClickResult
+struct delegateOnUserClickResult_t415D445CE00D476CA40087D09D1C7ADD8FFCB6AD;
+// EventManager/delegateOnUserGetWrong
+struct delegateOnUserGetWrong_tABBCA07EC34C6D662E25B9D95D56F21CACCBF09B;
+// EventManager/delegateOnUserUpdateDots
+struct delegateOnUserUpdateDots_tAF127D0DACB31D6AEF8C87EA9F6AA3DAB1CBF627;
+// EventManager/delegateOnUserUpdateState
+struct delegateOnUserUpdateState_t132093590861731F405366D8E22C6FBCA81FFA70;
+// EventManager/delegateOnUserWantReset
+struct delegateOnUserWantReset_t24C28B5E572965638EED5A17C074FE0310BAD697;
 // TouchScript.Gestures.Gesture/GestureEvent
 struct GestureEvent_t60F4776CB6B1917B65764E10319F1D213EBA2884;
 // TouchScript.Examples.KillMe/<Start>d__1
@@ -411,6 +439,7 @@ IL2CPP_EXTERN_C RuntimeClass* EventHandler_1_t945874111F5012948AA203719B1A7FFEE1
 IL2CPP_EXTERN_C RuntimeClass* EventHandler_1_tCD29F0FF60BB3FB43C5CC6EF500FFED59E9FA216_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* EventHandler_1_tE905A28DD51539FEF06083E17205B724393BC4FA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* EventHandler_1_tF2D41B212D800E7E7D00F9BDEA817E57153988BF_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* EventManager_t2FAA3AA5EE7E33EE027BB7CA68ABCF128E3C579A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Exception_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Gesture_t5E5DEDAA68FD273A982635BA166380B0C3AFD328_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GradientTexture_t3017B2A152CE7A975273690BBF6DC330CB703B01_il2cpp_TypeInfo_var;
@@ -449,6 +478,7 @@ IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_
 IL2CPP_EXTERN_C RuntimeClass* Vibration_tCB9307614E02843D55D3AE5075416B1C9CFEDC9A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WaitForEndOfFrame_tE38D80923E3F8380069B423968C25ABE50A46663_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* delegateOnUserGetWrong_tABBCA07EC34C6D662E25B9D95D56F21CACCBF09B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD;
 IL2CPP_EXTERN_C String_t* _stringLiteral09DF0F4EA30887D5D6E2833D4C620AAAB11E1C34;
 IL2CPP_EXTERN_C String_t* _stringLiteral0CB51CF3B3853A43D70B8C2965E5A131A716930E;
@@ -572,6 +602,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* TextPointerCursor_1_gethash_mA8D76048F4F0F2
 IL2CPP_EXTERN_C const RuntimeMethod* TextPointerCursor_1_textIsVisible_m29CD52B85DAE849E5878B4DEB5CEE9537F16C39F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CStartU3Ed__1_System_Collections_IEnumerator_Reset_mCF12DAD7AC1BE1061EC36FFAFBCB28F165F36F16_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CresetUILayerU3Ed__9_System_Collections_IEnumerator_Reset_mA9EA5F2BCC95A7B0EBE932AB59BA391745B34BC8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Vibrator_MakeVibration_m5D4C6DF104CF0D05CA184B177C01F34ED1CE371C_RuntimeMethod_var;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
 struct Exception_t_marshaled_com;
@@ -1647,6 +1678,11 @@ struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1  : public Component_t
 {
 };
 
+// EventManager/delegateOnUserGetWrong
+struct delegateOnUserGetWrong_tABBCA07EC34C6D662E25B9D95D56F21CACCBF09B  : public MulticastDelegate_t
+{
+};
+
 // UnityEngine.Camera
 struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
 {
@@ -1779,6 +1815,35 @@ struct Container_t049DA32B3E25F2869749297EAE6B5DFA04AE6A4F  : public MonoBehavio
 // TouchScript.Core.DebuggableMonoBehaviour
 struct DebuggableMonoBehaviour_tB8E7E5E9428B34D292319AA0EB9BFF1AB791910E  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+};
+
+// EventManager
+struct EventManager_t2FAA3AA5EE7E33EE027BB7CA68ABCF128E3C579A  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// EventManager/delegateOnUserClickButton EventManager::OnUserClickButton
+	delegateOnUserClickButton_t75E77BCF0B8B5B731D3B37D933327C1548F2152B* ___OnUserClickButton_5;
+	// EventManager/delegateOnUserClickResult EventManager::OnUserClickResult
+	delegateOnUserClickResult_t415D445CE00D476CA40087D09D1C7ADD8FFCB6AD* ___OnUserClickResult_6;
+	// EventManager/delegateOnUserUpdateDots EventManager::OnUpdateDots
+	delegateOnUserUpdateDots_tAF127D0DACB31D6AEF8C87EA9F6AA3DAB1CBF627* ___OnUpdateDots_7;
+	// EventManager/delegateOnUserUpdateState EventManager::OnUpdateState
+	delegateOnUserUpdateState_t132093590861731F405366D8E22C6FBCA81FFA70* ___OnUpdateState_8;
+	// EventManager/delegateOnMarkerNumberUpdate EventManager::OnMarkerNumberUpdate
+	delegateOnMarkerNumberUpdate_t998E392401E85C9B9A398D2488AF0C17D8B5FCF4* ___OnMarkerNumberUpdate_9;
+	// EventManager/delegateOnOperatorUpdate EventManager::OnOperatorUpdate
+	delegateOnOperatorUpdate_t3876CAB8F12966A9F0E507B08F2B962040967346* ___OnOperatorUpdate_10;
+	// EventManager/delegateOnChangeColor EventManager::OnChangeColor
+	delegateOnChangeColor_tDC0949F187BB2A15EDAC20270E21A3DE531EB521* ___OnChangeColor_11;
+	// EventManager/delegateOnUserWantReset EventManager::OnUserWantReset
+	delegateOnUserWantReset_t24C28B5E572965638EED5A17C074FE0310BAD697* ___OnUserWantReset_12;
+	// EventManager/delegateOnUserGetWrong EventManager::OnUserGetWrong
+	delegateOnUserGetWrong_tABBCA07EC34C6D662E25B9D95D56F21CACCBF09B* ___OnUserGetWrong_13;
+};
+
+struct EventManager_t2FAA3AA5EE7E33EE027BB7CA68ABCF128E3C579A_StaticFields
+{
+	// EventManager EventManager::instance
+	EventManager_t2FAA3AA5EE7E33EE027BB7CA68ABCF128E3C579A* ___instance_4;
 };
 
 // TouchScript.Examples.Checkers.Exclusive
@@ -2039,6 +2104,11 @@ struct Transformer_tC6A9F2D88F05C80A88CEEC2C3A82E3B4AE1D39DC  : public MonoBehav
 
 // UnityEngine.EventSystems.UIBehaviour
 struct UIBehaviour_tB9D4295827BD2EEDEF0749200C6CA7090C742A9D  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+};
+
+// RDG.Vibrator
+struct Vibrator_t11891E8D0D00F494824FC1C60BE7EAB13D7EEFF6  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 };
 
@@ -3391,8 +3461,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Single_ToString_mE282EDA9CA4F7DF884
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___str00, String_t* ___str11, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Debug::Log(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___message0, const RuntimeMethod* method) ;
-// System.Void RDG.Vibration::VibratePredefined(System.Int32,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Vibration_VibratePredefined_m9EAB06A1ECE35285D5096FCEB6835F1250405821 (int32_t ___effectId0, bool ___cancel1, const RuntimeMethod* method) ;
+// System.Void EventManager::OnUserReset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EventManager_OnUserReset_m9798922197ECB8A8BDBD3B7872DF31A09B8D29E0 (EventManager_t2FAA3AA5EE7E33EE027BB7CA68ABCF128E3C579A* __this, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Application::get_isConsolePlatform()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Application_get_isConsolePlatform_m2E359020C16654B2E5DD549A27B5568EEE4838EA (const RuntimeMethod* method) ;
 // System.Void UnityEngine.Handheld::Vibrate()
@@ -3505,6 +3575,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Vibration_arrToStr_m59C49138C12C2FD
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_m918500C1EFB475181349A79989BB79BB36102894 (String_t* ___format0, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___args1, const RuntimeMethod* method) ;
 // System.String System.String::Format(System.String,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8 (String_t* ___format0, RuntimeObject* ___arg01, const RuntimeMethod* method) ;
+// System.Void EventManager/delegateOnUserGetWrong::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void delegateOnUserGetWrong__ctor_m5136E9377B3B43CEF0E91640DC90999A65C62D2E (delegateOnUserGetWrong_tABBCA07EC34C6D662E25B9D95D56F21CACCBF09B* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
+// System.Delegate System.Delegate::Combine(System.Delegate,System.Delegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t* Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00 (Delegate_t* ___a0, Delegate_t* ___b1, const RuntimeMethod* method) ;
+// System.Delegate System.Delegate::Remove(System.Delegate,System.Delegate)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t* Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3 (Delegate_t* ___source0, Delegate_t* ___value1, const RuntimeMethod* method) ;
+// System.Void RDG.Vibration::VibratePredefined(System.Int32,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Vibration_VibratePredefined_m9EAB06A1ECE35285D5096FCEB6835F1250405821 (int32_t ___effectId0, bool ___cancel1, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Color::.ctor(System.Single,System.Single,System.Single,System.Single)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___r0, float ___g1, float ___b2, float ___a3, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Mathf::Clamp01(System.Single)
@@ -8615,7 +8693,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Shaker_Update_m1F2FF1C8E5D90F07B89CBD90B
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vibration_tCB9307614E02843D55D3AE5075416B1C9CFEDC9A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventManager_t2FAA3AA5EE7E33EE027BB7CA68ABCF128E3C579A_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE5997088ADE8F8446598C93ECA8721F2FEE8C9E2);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -8648,7 +8726,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Shaker_Update_m1F2FF1C8E5D90F07B89CBD90B
 		float L_9 = __this->___shakeDetectionThreshold_6;
 		if ((!(((float)L_8) >= ((float)L_9))))
 		{
-			goto IL_005d;
+			goto IL_0060;
 		}
 	}
 	{
@@ -8662,12 +8740,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Shaker_Update_m1F2FF1C8E5D90F07B89CBD90B
 		L_12 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralE5997088ADE8F8446598C93ECA8721F2FEE8C9E2, L_11, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_12, NULL);
-		// Vibration.VibratePredefined(1);
-		il2cpp_codegen_runtime_class_init_inline(Vibration_tCB9307614E02843D55D3AE5075416B1C9CFEDC9A_il2cpp_TypeInfo_var);
-		Vibration_VibratePredefined_m9EAB06A1ECE35285D5096FCEB6835F1250405821(1, (bool)0, NULL);
+		// EventManager.instance.OnUserReset();
+		EventManager_t2FAA3AA5EE7E33EE027BB7CA68ABCF128E3C579A* L_13 = ((EventManager_t2FAA3AA5EE7E33EE027BB7CA68ABCF128E3C579A_StaticFields*)il2cpp_codegen_static_fields_for(EventManager_t2FAA3AA5EE7E33EE027BB7CA68ABCF128E3C579A_il2cpp_TypeInfo_var))->___instance_4;
+		NullCheck(L_13);
+		EventManager_OnUserReset_m9798922197ECB8A8BDBD3B7872DF31A09B8D29E0(L_13, NULL);
 	}
 
-IL_005d:
+IL_0060:
 	{
 		// }
 		return;
@@ -10794,6 +10873,97 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Vibration_U3CVibratePredefinedU3Eg_
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void RDG.Vibrator::OnEnable()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Vibrator_OnEnable_m9094787DE0F6F2B793C4CF5CAE31342ED8550A2A (Vibrator_t11891E8D0D00F494824FC1C60BE7EAB13D7EEFF6* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventManager_t2FAA3AA5EE7E33EE027BB7CA68ABCF128E3C579A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vibrator_MakeVibration_m5D4C6DF104CF0D05CA184B177C01F34ED1CE371C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&delegateOnUserGetWrong_tABBCA07EC34C6D662E25B9D95D56F21CACCBF09B_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// EventManager.instance.OnUserGetWrong += MakeVibration;
+		EventManager_t2FAA3AA5EE7E33EE027BB7CA68ABCF128E3C579A* L_0 = ((EventManager_t2FAA3AA5EE7E33EE027BB7CA68ABCF128E3C579A_StaticFields*)il2cpp_codegen_static_fields_for(EventManager_t2FAA3AA5EE7E33EE027BB7CA68ABCF128E3C579A_il2cpp_TypeInfo_var))->___instance_4;
+		EventManager_t2FAA3AA5EE7E33EE027BB7CA68ABCF128E3C579A* L_1 = L_0;
+		NullCheck(L_1);
+		delegateOnUserGetWrong_tABBCA07EC34C6D662E25B9D95D56F21CACCBF09B* L_2 = L_1->___OnUserGetWrong_13;
+		delegateOnUserGetWrong_tABBCA07EC34C6D662E25B9D95D56F21CACCBF09B* L_3 = (delegateOnUserGetWrong_tABBCA07EC34C6D662E25B9D95D56F21CACCBF09B*)il2cpp_codegen_object_new(delegateOnUserGetWrong_tABBCA07EC34C6D662E25B9D95D56F21CACCBF09B_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		delegateOnUserGetWrong__ctor_m5136E9377B3B43CEF0E91640DC90999A65C62D2E(L_3, __this, (intptr_t)((void*)Vibrator_MakeVibration_m5D4C6DF104CF0D05CA184B177C01F34ED1CE371C_RuntimeMethod_var), NULL);
+		Delegate_t* L_4;
+		L_4 = Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00(L_2, L_3, NULL);
+		NullCheck(L_1);
+		L_1->___OnUserGetWrong_13 = ((delegateOnUserGetWrong_tABBCA07EC34C6D662E25B9D95D56F21CACCBF09B*)CastclassSealed((RuntimeObject*)L_4, delegateOnUserGetWrong_tABBCA07EC34C6D662E25B9D95D56F21CACCBF09B_il2cpp_TypeInfo_var));
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___OnUserGetWrong_13), (void*)((delegateOnUserGetWrong_tABBCA07EC34C6D662E25B9D95D56F21CACCBF09B*)CastclassSealed((RuntimeObject*)L_4, delegateOnUserGetWrong_tABBCA07EC34C6D662E25B9D95D56F21CACCBF09B_il2cpp_TypeInfo_var)));
+		// }
+		return;
+	}
+}
+// System.Void RDG.Vibrator::OnDisable()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Vibrator_OnDisable_m2145490D3029DFF8A821A5185D757DA888D61D1A (Vibrator_t11891E8D0D00F494824FC1C60BE7EAB13D7EEFF6* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventManager_t2FAA3AA5EE7E33EE027BB7CA68ABCF128E3C579A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vibrator_MakeVibration_m5D4C6DF104CF0D05CA184B177C01F34ED1CE371C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&delegateOnUserGetWrong_tABBCA07EC34C6D662E25B9D95D56F21CACCBF09B_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// EventManager.instance.OnUserGetWrong -= MakeVibration;
+		EventManager_t2FAA3AA5EE7E33EE027BB7CA68ABCF128E3C579A* L_0 = ((EventManager_t2FAA3AA5EE7E33EE027BB7CA68ABCF128E3C579A_StaticFields*)il2cpp_codegen_static_fields_for(EventManager_t2FAA3AA5EE7E33EE027BB7CA68ABCF128E3C579A_il2cpp_TypeInfo_var))->___instance_4;
+		EventManager_t2FAA3AA5EE7E33EE027BB7CA68ABCF128E3C579A* L_1 = L_0;
+		NullCheck(L_1);
+		delegateOnUserGetWrong_tABBCA07EC34C6D662E25B9D95D56F21CACCBF09B* L_2 = L_1->___OnUserGetWrong_13;
+		delegateOnUserGetWrong_tABBCA07EC34C6D662E25B9D95D56F21CACCBF09B* L_3 = (delegateOnUserGetWrong_tABBCA07EC34C6D662E25B9D95D56F21CACCBF09B*)il2cpp_codegen_object_new(delegateOnUserGetWrong_tABBCA07EC34C6D662E25B9D95D56F21CACCBF09B_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		delegateOnUserGetWrong__ctor_m5136E9377B3B43CEF0E91640DC90999A65C62D2E(L_3, __this, (intptr_t)((void*)Vibrator_MakeVibration_m5D4C6DF104CF0D05CA184B177C01F34ED1CE371C_RuntimeMethod_var), NULL);
+		Delegate_t* L_4;
+		L_4 = Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3(L_2, L_3, NULL);
+		NullCheck(L_1);
+		L_1->___OnUserGetWrong_13 = ((delegateOnUserGetWrong_tABBCA07EC34C6D662E25B9D95D56F21CACCBF09B*)CastclassSealed((RuntimeObject*)L_4, delegateOnUserGetWrong_tABBCA07EC34C6D662E25B9D95D56F21CACCBF09B_il2cpp_TypeInfo_var));
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___OnUserGetWrong_13), (void*)((delegateOnUserGetWrong_tABBCA07EC34C6D662E25B9D95D56F21CACCBF09B*)CastclassSealed((RuntimeObject*)L_4, delegateOnUserGetWrong_tABBCA07EC34C6D662E25B9D95D56F21CACCBF09B_il2cpp_TypeInfo_var)));
+		// }
+		return;
+	}
+}
+// System.Void RDG.Vibrator::MakeVibration()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Vibrator_MakeVibration_m5D4C6DF104CF0D05CA184B177C01F34ED1CE371C (Vibrator_t11891E8D0D00F494824FC1C60BE7EAB13D7EEFF6* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vibration_tCB9307614E02843D55D3AE5075416B1C9CFEDC9A_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// Vibration.VibratePredefined(1);
+		il2cpp_codegen_runtime_class_init_inline(Vibration_tCB9307614E02843D55D3AE5075416B1C9CFEDC9A_il2cpp_TypeInfo_var);
+		Vibration_VibratePredefined_m9EAB06A1ECE35285D5096FCEB6835F1250405821(1, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void RDG.Vibrator::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Vibrator__ctor_m3BE04C7E211DE8857060D635B8EB59892C2A838E (Vibrator_t11891E8D0D00F494824FC1C60BE7EAB13D7EEFF6* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

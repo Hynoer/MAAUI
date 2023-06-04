@@ -13825,10 +13825,18 @@ struct GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6  : public MonoBehav
 	int32_t ___secondBase_9;
 	// Env/OperatorMarker GameManager::operation
 	int32_t ___operation_10;
+	// UnityEngine.GameObject GameManager::StreakPanel
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___StreakPanel_11;
 	// UnityEngine.GameObject GameManager::NextPanel
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___NextPanel_11;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___NextPanel_12;
 	// GameManager/GameState GameManager::currentGameState
-	int32_t ___currentGameState_12;
+	int32_t ___currentGameState_13;
+	// UnityEngine.GameObject GameManager::PanelPlus
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___PanelPlus_14;
+	// UnityEngine.GameObject GameManager::PanelMinus
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___PanelMinus_15;
+	// System.Int32 GameManager::streak
+	int32_t ___streak_16;
 };
 
 struct GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6_StaticFields
@@ -16265,9 +16273,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3252[8] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3253[3] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3254[9] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3254[13] = 
 {
-	static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6_StaticFields, ___instance_4)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___firstNumber_5)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___secondNumber_6)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___resultNumber_7)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___firstBase_8)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___secondBase_9)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___operation_10)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___NextPanel_11)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___currentGameState_12)),};
+	static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6_StaticFields, ___instance_4)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___firstNumber_5)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___secondNumber_6)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___resultNumber_7)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___firstBase_8)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___secondBase_9)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___operation_10)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___StreakPanel_11)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___NextPanel_12)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___currentGameState_13)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___PanelPlus_14)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___PanelMinus_15)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___streak_16)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3255[1] = 
 {
 	static_cast<int32_t>(offsetof(MainScreenButton_tD1E18C1D4331E1A29D811766E38C5F31BD8481D8, ___currentAction_4)),};

@@ -54120,10 +54120,18 @@ struct GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6  : public MonoBehav
 	int32_t ___secondBase_9;
 	// Env/OperatorMarker GameManager::operation
 	int32_t ___operation_10;
+	// UnityEngine.GameObject GameManager::StreakPanel
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___StreakPanel_11;
 	// UnityEngine.GameObject GameManager::NextPanel
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___NextPanel_11;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___NextPanel_12;
 	// GameManager/GameState GameManager::currentGameState
-	int32_t ___currentGameState_12;
+	int32_t ___currentGameState_13;
+	// UnityEngine.GameObject GameManager::PanelPlus
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___PanelPlus_14;
+	// UnityEngine.GameObject GameManager::PanelMinus
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___PanelMinus_15;
+	// System.Int32 GameManager::streak
+	int32_t ___streak_16;
 };
 
 struct GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6_StaticFields

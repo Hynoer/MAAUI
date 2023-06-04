@@ -20,10 +20,10 @@ Update les tags
 Storytelling
     -what happen when result ok -> = 
     -creation calcul random -> store the calcul created
-    -egale/result number start at ? (?,0,1,2,3,4,5,....)
     -switching to mode exploration solve the calcule instantly
     -switching to mode challenge randomize the numbers
     -show counter streak in challenger mode -> result ok +1, no ok = 0
+    -affiche the streak panel when switching mode (next start the same)
     -panel de score maybe best score
     
 Updater les prefabs numbers
